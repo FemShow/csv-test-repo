@@ -40,9 +40,6 @@
             },
             "measure": {
                 "label": "measure"
-              },
-              "unit": {
-                "label": "Count"
               }
         }
     }
