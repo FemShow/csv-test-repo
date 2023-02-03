@@ -1,0 +1,46 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "NUMBER OF BUSINESSES BY LGD",
+    "description": "Number of businesses listed by LGD",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "publisher": "https://www.gov.uk/government/organisations/uk-health-security-agency",  
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "columns": {
+        "statistic_code": {
+            "type": "measures"
+        },
+        "statistic": {
+            "type": "measures"
+        },
+        "tlist-a1": {
+            "type": "dimension"
+        },
+        "year": {
+            "from_template": "year",
+            "label": "year"
+        },
+        "lg2014": {
+            "type": "dimension",
+            "label": "Geography",   
+            "code_list": false,
+            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+lg2014}",
+            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+        },
+        "local_government_district_2014": {
+            "type": "dimension"
+        },
+        "unit": {
+            "type": "units"
+        },
+        "value": {
+            "type": "observations",
+            "unit": {
+                "from_existing": "http://qudt.org/vocab/unit/NUM",
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Value"
+            }
+        }
+    }
+}
