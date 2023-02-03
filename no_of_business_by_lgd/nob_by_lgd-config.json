@@ -39,8 +39,11 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Value"
-            }
+                "label": "measure"
+              },
+              "unit": {
+                "label": "Count"
+              }
         }
     }
 }
