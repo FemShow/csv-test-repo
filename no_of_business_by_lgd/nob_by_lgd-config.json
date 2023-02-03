@@ -39,7 +39,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "observations"
+                "label": "NUMBER"
               }
         }
     }
