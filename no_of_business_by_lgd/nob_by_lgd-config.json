@@ -33,13 +33,13 @@
             "type": "units"
         },
         "value": {
-            "type": "observations",
+            "type": "dimension",
             "unit": {
                 "from_existing": "http://qudt.org/vocab/unit/NUM",
                 "label": "Count"
             },
             "measure": {
-                "label": "measure"
+                "label": "observations"
               }
         }
     }
