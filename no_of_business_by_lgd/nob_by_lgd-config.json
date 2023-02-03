@@ -7,10 +7,10 @@
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "columns": {
         "statistic_code": {
-            "type": "measures"
+            "type": "dimension"
         },
         "statistic": {
-            "type": "measures"
+            "type": "dimension"
         },
         "tlist-a1": {
             "type": "dimension"
