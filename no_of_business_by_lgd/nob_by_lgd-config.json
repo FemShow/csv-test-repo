@@ -25,6 +25,7 @@
         "UNIT": false,
         "VALUE": {
             "type": "observations",
+            "data_type": "integer",
             "unit": {
                 "from_existing": "http://qudt.org/vocab/unit/NUM",
                 "label": "Number",
