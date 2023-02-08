@@ -27,7 +27,8 @@
             "type": "observations",
             "unit": {
                 "from_existing": "http://qudt.org/vocab/unit/NUM",
-                "label": "Number"
+                "label": "Number",
+                "description": "Number of business by lgd (Integer)."
             }
         }
     }
