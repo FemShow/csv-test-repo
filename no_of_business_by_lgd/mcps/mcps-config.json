@@ -1,4 +1,4 @@
-{
+    {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "Marital and civil partnership status by category",
     "description": "Marital and civil partnership status by category",
@@ -7,36 +7,66 @@
     "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
     "columns": {
         "Lower Tier Local Authorities Code": {
-            "type": "dimension",
-            "label": "Geography",   
-            "code_list": false,
-            "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+lower tier local authorities code}",
-            "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+            "from_template": "statistical-geography"
+            },
+        "Lower Tier Local Authorities":{
+            "from_template": "statistical-geography"
+            },
+        "Marital and civil partnership status (12 categories) Code":false,
+        "Marital and civil partnership status (12 categories)":
+        {
+        "type": "measures",
+        "values":
+    [
+        {
+            "label": "Does not apply"
         },
-        "Lower Tier Local Authorities": false,
-        "dimension": {
-            "type": "attribute",
-            "describes_observations": "Lower Tier Local Authorities Code"
+        {
+            "label": "Never married and never registered a civil partnership"
         },
-        "Marital and civil partnership status (12 categories) Code": false,
-        "Statistic": {
-            "type": "measures"
+        {
+            "label": "Married: Opposite sex"
         },
-        "Marital and civil partnership status (12 categories)": {
-            "type": "attribute",
-            "describes_observations": "Marital and civil partnership status (12 categories) Code"
+        {
+            "label": "Married: Same sex"
         },
-        "Observation": false,
-        "UNIT": false,
-        "VALUE": {
-            "type": "observations",
-            "data_type": "integer",
-            "unit": {
-                "from_existing": "http://qudt.org/vocab/unit/NUM",
-                "label": "Number",
-                "description": "Observation."
-            }
+        {
+            "label": "In a registered civil partnership: Opposite sex"
+        },
+        {
+            "label": "In a registered civil partnership: Same sex"
+        },
+        {
+            "label": "Separated, but still married"
+        },
+        {
+            "label": "Separated, but still in a registered civil partnership"
+        },
+        {
+            "label": "Divorced"
+        },
+        {
+            "label": "Formerly in a civil partnership now legally dissolved"
+        },
+        {
+            "label": "Widowed"
+        },
+        {
+            "label": "Surviving partner from civil partnership"
+        }
+    ]
+},
+        "Observation":
+        {
+         "type": "observations",
+         "data_type": "integer",
+         "unit": {
+            "from_existing": "http://qudt.org/vocab/unit/NUM",
+            "label": "Number",
+            "description": "Number of business by lgd (Integer)."
+        }
         }
     }
 }
-    
+        
+        
